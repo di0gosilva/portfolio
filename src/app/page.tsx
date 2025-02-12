@@ -1,7 +1,7 @@
+import {FaArrowDown} from 'react-icons/fa'
 import {FaLinkedin} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
 import {FaInstagram} from 'react-icons/fa'
-import {FaArrowDown} from 'react-icons/fa'
 import {FaEnvelope} from 'react-icons/fa'
 
 export default function Home() {
@@ -13,7 +13,10 @@ export default function Home() {
         <nav className="text-xs flex gap-2">
           <a href="#">sobre mim</a>
           <a href="#">projetos</a>
-          <a href="#" className="text-green flex items-center gap-1 "><FaArrowDown /> currículo</a>
+          <a href="#" className="text-green flex items-center gap-1 underline decoration-1 underline-offset-4">
+            <FaArrowDown/>
+            currículo
+          </a>
         </nav>
       </header>
 
@@ -24,10 +27,12 @@ export default function Home() {
         <a href="https://gmail.com" target='_blank'><FaEnvelope size={44}/></a>
       </div>
 
-      <div className="mt-28 ml-4">
-        <h2 className="text-5xl font-medium tracking-[-0.06rem]">Desenvolvedor</h2>
-        <h2 className="text-5xl font-medium tracking-[-0.06rem]">Full Stack &</h2>
-        <h2 className="text-5xl font-medium tracking-[-0.06rem]">Web Designer</h2>
+      <div className="mt-28 flex items-center justify-center">
+        <h1 className="text-5xl font-medium tracking-[-0.06rem]">
+          Desenvolvedor<br />
+          Full Stack &<br />
+          Web Designer
+        </h1>
       </div>
 
       <div className='mt-28 flex justify-center items-center'>
