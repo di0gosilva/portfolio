@@ -1,4 +1,4 @@
-import {FaArrowDown} from 'react-icons/fa'
+import Image from 'next/image'
 import {FaLinkedin} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
 import {FaInstagram} from 'react-icons/fa'
@@ -13,8 +13,8 @@ export default function Home() {
         <nav className="text-xs flex gap-2">
           <a href="#">sobre mim</a>
           <a href="#">projetos</a>
-          <a href="#" className="text-green flex items-center gap-1 underline decoration-1 underline-offset-4">
-            <FaArrowDown/>
+          <a href="#" className="text-green flex items-center border-b border-green pb-px">
+            <Image src="../../images/Icon-Arrow-Down.svg" alt="Ícone de seta para baixo" width={8} height={8} className="mr-1"/>
             currículo
           </a>
         </nav>
@@ -42,8 +42,22 @@ export default function Home() {
       </div>
 
 
-      <div className='mt-28 flex justify-center items-center'>
-        <a href="#"><FaArrowDown size={32} className='text-green'/></a>
+      <div className='mt-28 flex justify-center items-center mb-3'>
+        <Image src="../../images/Icon-Arrow-Down-2.svg" alt="Ícone de seta para baixo" width={32} height={32}/>
+      </div>
+
+      <h3 className="mt-5 font-medium tracking-[-0.03rem] relative">
+        <span className='border-b-2 w-5 border-white absolute -bottom-px'></span>
+        Sobre Mim
+      </h3>
+
+      <div className='mt-24'>
+        <h2 className='font-medium text-lg tracking-[-0.03rem]'>Do conceito ao código:</h2>
+        <h2 className='ml-7 -mt-1 font-medium text-lg tracking-[-0.03rem]'>Crio <span className='text-green'>experiências</span> digitais personalizadas.</h2>
+      </div>
+
+      <div className='mt-28 flex items-center justify-center'>
+        <Image src="../../images/profile.svg" alt='Imagem de Perfil' width={153} height={153} />
       </div>
     </>
   );
