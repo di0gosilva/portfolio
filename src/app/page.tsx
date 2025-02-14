@@ -3,7 +3,6 @@ import {FaLinkedin} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
 import {FaInstagram} from 'react-icons/fa'
 import {FaEnvelope} from 'react-icons/fa'
-import ScrollingText from './ScrollingText'
 
 export default function Home() {
   return (
@@ -58,7 +57,7 @@ export default function Home() {
       </div>
 
       <div className='mt-28 flex items-center justify-center'>
-        <Image src="../../images/Imagem.svg" alt='Imagem de Perfil' width={153} height={153} />
+        <Image src="../../images/perfil.svg" alt='Imagem de Perfil' width={170} height={170} />
       </div>
 
       <div className='mt-24 font-normal text-xs tracking-[-0.04em] leading-[1.125rem]'>
@@ -157,7 +156,6 @@ export default function Home() {
 
       <h2 className='text-center font-medium mt-3 mb-1 text-[3.2rem] tracking-[-0.05rem]'>DIOGO SILVA</h2>
 
-      <ScrollingText />
     </>
   );
 }
