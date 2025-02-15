@@ -7,7 +7,7 @@ import Marquee from './Marquee'
 import ScrollToTop from './ScrollToTop'
 import Header from './Header/Header'
 import HeroSection from './HeroSection/HeroSection'
-import AboutMe from './AboutMe.tsx/AboutMe'
+import AboutMe from './AboutMe/AboutMe'
 import SectionTitle from './SectionTitle'
 
 export default function Home() {
