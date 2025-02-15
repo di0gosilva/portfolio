@@ -13,6 +13,9 @@ export default {
         white: "#F7F1D7",
         green: "#0CA45A",
       },
+      screens: {
+        'xs': {'max': '389px'},
+      },
     },
   },
   plugins: [],

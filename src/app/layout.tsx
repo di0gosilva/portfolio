@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 
 const fontAeonik = localFont({
@@ -42,7 +41,6 @@ export default function RootLayout({
           antialiased
         bg-black
         text-white
-          mx-5
         `}
       >
         {children}
