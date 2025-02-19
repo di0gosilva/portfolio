@@ -1,17 +1,29 @@
+"use client"
+import FadeIn from "../FadeIn";
 import SectionTitle from "../SectionTitle";
 import Description from "./Description";
 import ProfileImage from "./ProfileImage";
-import Technologies from "./Technologies";
+import TechnologiesFirstRow from "./TechnologiesFirstRow";
+import TechnologiesSecondRow from "./TechnologiesSecondRow";
 import Title from "./Title";
 
 export default function AboutMe() {
   return (
     <>
       <SectionTitle title="Sobre mim"/>
-      <Title />
-      <ProfileImage />
-      <Description />
-      <Technologies />
+      <FadeIn>
+        <Title />
+      </FadeIn>
+      <FadeIn>
+        <ProfileImage />
+      </FadeIn>
+      <FadeIn>
+        <Description />
+      </FadeIn>
+      <FadeIn>
+        <TechnologiesFirstRow />
+        <TechnologiesSecondRow />
+      </FadeIn>
     </>
   )
 }

@@ -1,6 +1,4 @@
-import Image from "next/image"
-
-const technologies = [
+export const technologies = [
   {
     src: "../../images/socials/figma.svg",
     alt: "Ícone do Figma",
@@ -103,20 +101,3 @@ const technologies = [
     classname: 'ml-[0.440rem]'
   },
 ]
-
-export default function Technologies() {
-  return (
-    <section className='mx-5 mt-6 mb-10 flex flex-wrap gap-4 items-center xs:gap-3.5'>
-      {technologies.map((item, index) => (
-        <Image
-          key={index}
-          src={item.src}
-          alt={item.alt}
-          width={item.width}
-          height={item.height}
-          className={item.classname}
-        />
-      ))}
-    </section>
-  )
-}

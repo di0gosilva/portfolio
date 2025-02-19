@@ -2,7 +2,7 @@ import {FaLinkedin} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
 import {FaInstagram} from 'react-icons/fa'
 import {FaEnvelope} from 'react-icons/fa'
-import SocialLink from './SocialLink'
+import SocialLink from '../SocialLink'
 
 const socials = [
   {
@@ -21,13 +21,13 @@ const socials = [
     size: 40
   },
   {
-    url: "https://gmail.com",
+    url: "mailto:diogo.silva8@estudante.sesisenai.org.br?subject=Assunto&body=Olá!",
     icon: FaEnvelope,
     size: 44
   },
 ]
 
-export default function Socials() {
+export default function SocialsHero() {
   return (
     <section className='mt-20 flex justify-center gap-5 items-center'>
       {socials.map((social, index) => (
