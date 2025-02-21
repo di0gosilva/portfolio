@@ -1,6 +1,6 @@
 export const technologies = [
   {
-    src: "../../images/socials/figma.svg",
+    src: "../../images/socials/Figma.svg",
     alt: "Ícone do Figma",
     width: 30,
     height: 30,
