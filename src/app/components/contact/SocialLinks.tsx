@@ -1,7 +1,7 @@
 const socials = [
   {
     src: "https://www.linkedin.com/in/diogo-silva-ba702495/",
-    title: "Lindekdin"
+    title: "Linkedin"
   },
   {
     src: "https://github.com/di0gosilva",
