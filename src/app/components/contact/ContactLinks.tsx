@@ -10,7 +10,7 @@ export default function ContactLinks() {
   const isInView = useInView(ref, { margin: "-100px" });
 
   return (
-    <section ref={ref} className='mx-5 my-32'>
+    <section ref={ref} className='mx-5 my-36'>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}

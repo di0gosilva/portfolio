@@ -7,7 +7,6 @@ export const projects = [
       "../../images/img-smartcash/login.svg",
       "../../images/img-smartcash/home1.svg",
       "../../images/img-smartcash/home2.svg",
-      "../../images/img-smartcash/home3.svg",
     ],
     title: "SmartCash",
     techImages: [

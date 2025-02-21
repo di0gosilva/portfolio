@@ -1,10 +1,10 @@
-import SectionTitle from "../SectionTitle";
+import SectionTitle from "../../SectionTitle";
 import BoxProject from "./BoxProject";
 
 export default function Projects() {
   return (
     <>
-      <SectionTitle title='Projetos' />
+      <SectionTitle id="projects" title='Projetos' />
       <BoxProject />
     </>
   )

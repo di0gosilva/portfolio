@@ -4,14 +4,16 @@ import { useRef } from "react";
 
 type SectionTitle = {
   title: string;
+  id?: string;
 }
 
-export default function SectionTitle({ title }: SectionTitle) {
+export default function SectionTitle({ title, id }: SectionTitle) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { margin: "-40px" });
+  const isInView = useInView(ref, { once: true ,margin: "-40px" });
 
   return (
     <motion.h3
+      id={id}
       ref={ref}
       className="mx-5 mt-10 font-medium tracking-[-0.03rem] relative"
       initial={{ opacity: 0, y: -30 }}

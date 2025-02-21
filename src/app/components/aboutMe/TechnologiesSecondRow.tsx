@@ -1,25 +1,21 @@
 import Image from "next/image"
-import { technologies } from "../data/technologies";
 import { motion } from "framer-motion";
+import { technologies } from "../../data/technologies";
 
-export default function TechnologiesFirstRow() {
-  const firstRow = technologies.slice(0, 8);
+export default function TechnologiesSecondRow() {
+  const secondRow = technologies.slice(8, 16);
   return (
     <>
-      <div className='mx-5 mt-12 font-normal text-xs tracking-[-0.04em] leading-[1.125rem]'>
-        <p>Ferramentas e tecnologias que utilizo:</p>
-      </div>
-
-      <div className="mt-8 overflow-hidden whitespace-nowrap relative w-full xs:gap-3.5">
+      <div className="mt-5 mb-10 overflow-hidden whitespace-nowrap relative w-full xs:gap-3.5">
         <motion.div
           className="flex min-w-max justify-start"
-          animate={{ x: ['0%', '-30%'] }}
+          animate={{ x: ['-30%', '0%'] }}
           transition={{ repeat: Infinity, duration: 200, ease: 'linear' }}
         >
           {[...Array(2)].map((_, j) => (
             <div key={j} className="flex gap-4">
               {[...Array(40)].map((_, i) =>
-                firstRow.map((item, index) => (
+                secondRow.map((item, index) => (
                   <Image
                     key={`${j}-${i}-${index}`} // Garante chaves únicas
                     src={item.src}
@@ -37,4 +33,5 @@ export default function TechnologiesFirstRow() {
     </>
   )
 }
+
 

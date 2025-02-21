@@ -1,9 +1,10 @@
-import Header from './Header/Header'
-import HeroSection from './HeroSection/HeroSection'
-import AboutMe from './AboutMe/AboutMe'
-import Projects from './Projects/Projects'
-import Contact from './Contact/Contact'
-import Footer from './Footer/Footer'
+import AboutMe from "./components/aboutMe/AboutMe";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import HeroSection from "./components/heroSection/HeroSection";
+import Projects from "./components/projects/Projects";
+
 
 export default function Home() {
   return (

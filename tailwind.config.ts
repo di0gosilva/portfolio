@@ -16,7 +16,6 @@ export default {
       screens: {
         'xs': {'max': '389px'},
       },
-
     },
   },
   plugins: [],
