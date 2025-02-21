@@ -15,7 +15,7 @@ export default function SectionTitle({ title, id }: SectionTitle) {
     <motion.h3
       id={id}
       ref={ref}
-      className="mx-5 mt-10 font-medium tracking-[-0.03rem] relative"
+      className="mx-5 mt-24 font-medium tracking-[-0.03rem] relative"
       initial={{ opacity: 0, y: -30 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
