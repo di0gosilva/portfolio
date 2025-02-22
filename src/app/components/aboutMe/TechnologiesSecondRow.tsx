@@ -6,14 +6,18 @@ export default function TechnologiesSecondRow() {
   const secondRow = technologies.slice(8, 16);
   return (
     <>
-      <div className="mt-5 mb-10 overflow-hidden whitespace-nowrap relative w-full xs:gap-3.5">
+      <div className="mt-5 mb-10 overflow-hidden whitespace-nowrap relative w-full xs:gap-3.5
+      sm:mb-10
+      ">
         <motion.div
           className="flex min-w-max justify-start"
           animate={{ x: ['-30%', '0%'] }}
-          transition={{ repeat: Infinity, duration: 200, ease: 'linear' }}
+          transition={{ repeat: Infinity, duration: 300, ease: 'linear' }}
         >
           {[...Array(2)].map((_, j) => (
-            <div key={j} className="flex gap-4">
+            <div key={j} className="flex gap-4 items-center
+              sm:gap-7
+            ">
               {[...Array(40)].map((_, i) =>
                 secondRow.map((item, index) => (
                   <Image

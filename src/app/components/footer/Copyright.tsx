@@ -1,5 +1,7 @@
 export default function Copyright() {
   return (
-    <p className='text-xs tracking-[-0.03rem]'>Copyright &copy; Diogo Silva 2025</p>
+    <p className='text-sm tracking-[-0.03rem] uppercase
+      sm:text-base
+    '>Copyright &copy; Diogo Silva 2025</p>
   )
 }

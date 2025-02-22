@@ -24,21 +24,27 @@ export default function AboutMe() {
           <Title />
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: -30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-        >
-          <ProfileImage />
-        </motion.div>
+        <div className="mx-5
+          sm:mx-10 sm:flex sm:justify-between sm:items-center
+        ">
+          <motion.div
+            className="sm:order-2"
+            initial={{ opacity: 0, y: -30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+          >
+            <ProfileImage />
+          </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
-        >
-          <Description />
-        </motion.div>
+          <motion.div
+            className="sm:order-1"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+          >
+            <Description />
+          </motion.div>
+        </div>
       </div>
 
       <TechnologiesFirstRow />

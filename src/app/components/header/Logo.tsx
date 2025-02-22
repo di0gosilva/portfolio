@@ -32,7 +32,10 @@ export default function Logo() {
   });
 
   return (
-    <h1 className="font-medium tracking-[-0.03rem]">
+    <h1 className="
+      font-medium tracking-[-0.03rem]
+      sm:text-2xl
+    ">
       {letters}
     </h1>
   );

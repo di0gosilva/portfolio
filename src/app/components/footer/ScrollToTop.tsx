@@ -24,11 +24,18 @@ const ScrollToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-5 right-4 ounded-full transition-opacity z-10 duration-300 ${
-        isVisible ? "opacity-100" : "opacity-0"
+      className={`fixed bottom-5 right-4 ounded-full transition-opacity z-10 duration-300
+        sm:right-[2.375rem] sm:bottom-6
+        ${ isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
-      <Image src="../../images/Icon-Arrow-Up.svg" alt="Ícone Seta para Cima" width={34} height={35} />
+      <Image
+        src="../../images/Icon-Arrow-Up.svg"
+        alt="Ícone Seta para Cima"
+        width={34}
+        height={35}
+        className="sm:h-12 sm:w-12"
+      />
     </button>
   );
 };

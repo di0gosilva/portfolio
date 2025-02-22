@@ -2,7 +2,7 @@ import React from 'react'
 
 type Social = {
   url: string;
-  size: number;
+  className: string;
   icon: React.ElementType;
 }
 
@@ -13,7 +13,7 @@ type SocialProps = {
 export default function SocialLink({ social }: SocialProps) {
   return (
     <a href={social.url} target='_blank' rel="noopener noreferrer">
-      <social.icon size={social.size}/>
+      <social.icon className={social.className} />
     </a>
   )
 }

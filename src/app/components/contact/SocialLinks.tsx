@@ -23,7 +23,9 @@ export default function SocialLinks() {
           target='_blank'
           rel="noopener noreferrer"
         >
-          <h2 className='mt-5 text-5xl uppercase tracking-[-0.05rem] mb-[-0.5rem]'>{social.title}</h2>
+          <h2 className='mt-5 text-5xl uppercase tracking-[-0.05rem] mb-[-0.5rem]
+            sm:text-[3.5rem] sm:mt-4
+          '>{social.title}</h2>
         </a>
       ))}
     </>

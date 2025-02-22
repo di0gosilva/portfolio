@@ -6,7 +6,9 @@ import SocialsFooter from "./SocialsFooter";
 export default function Footer() {
   return (
     <footer>
-      <div className='mx-5 flex justify-between items-center'>
+      <div className='mx-5 flex justify-between items-center
+        sm:mx-10
+      '>
         <Copyright />
         <SocialsFooter />
       </div>
