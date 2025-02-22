@@ -17,6 +17,7 @@ export default function TechnologiesSecondRow() {
           {[...Array(2)].map((_, j) => (
             <div key={j} className="flex gap-4 items-center
               sm:gap-7
+              md:gap-10
             ">
               {[...Array(40)].map((_, i) =>
                 secondRow.map((item, index) => (

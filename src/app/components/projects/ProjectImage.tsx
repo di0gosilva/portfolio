@@ -36,7 +36,9 @@ export default function ProjectImage({ images }: ImageProjectProps) {
           <Image
             key={i}
             src={src}
-            className="px-0.5"
+            className="px-0.5
+              md:w-[27.563rem] md:h-[16.875rem]
+            "
             alt="Imagens do projeto Smartcash"
             width={350}
             height={180} />

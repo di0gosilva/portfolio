@@ -8,6 +8,7 @@ export default function Footer() {
     <footer>
       <div className='mx-5 flex justify-between items-center
         sm:mx-10
+        md:mx-[3.75rem]
       '>
         <Copyright />
         <SocialsFooter />

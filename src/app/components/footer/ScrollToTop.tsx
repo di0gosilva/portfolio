@@ -26,6 +26,7 @@ const ScrollToTop = () => {
       onClick={scrollToTop}
       className={`fixed bottom-5 right-4 ounded-full transition-opacity z-10 duration-300
         sm:right-[2.375rem] sm:bottom-6
+        md:right-[3.75rem] md:bottom-[1.875rem]
         ${ isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
@@ -34,7 +35,9 @@ const ScrollToTop = () => {
         alt="Ícone Seta para Cima"
         width={34}
         height={35}
-        className="sm:h-12 sm:w-12"
+        className="sm:h-12 sm:w-12
+          md:h-14 md:w-14
+        "
       />
     </button>
   );

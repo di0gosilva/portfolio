@@ -25,6 +25,7 @@ export default function SocialLinks() {
         >
           <h2 className='mt-5 text-5xl uppercase tracking-[-0.05rem] mb-[-0.5rem]
             sm:text-[3.5rem] sm:mt-4
+            md:text-7xl md:mt-5
           '>{social.title}</h2>
         </a>
       ))}

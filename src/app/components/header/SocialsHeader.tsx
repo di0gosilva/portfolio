@@ -8,31 +8,36 @@ const socials = [
   {
     url: "https://www.linkedin.com/in/diogo-silva-ba702495/",
     icon: FaLinkedin,
-    className: "h-10 w-10 sm:h-6 sm:w-6"
+    size: 15,
+    className: "sm:h-[1.063rem] sm:w-[1.063rem] md:h-5 md:w-5"
   },
   {
     url: "https://github.com/di0gosilva",
     icon: FaGithub,
-    className: "h-10 w-10 sm:h-6 sm:w-6"
+    size: 15,
+    className: "sm:h-[1.063rem] sm:w-[1.063rem] md:h-5 md:w-5"
   },
   {
     url: "https://instagram.com/di0gosilva",
     icon: FaInstagram,
-    className: "h-10 w-10 sm:h-[1.625rem] sm:w-[1.625rem]"
+    size: 15,
+    className: "sm:h-[1.125rem] sm:w-[1.125rem] md:h-[1.375rem] md:w-[1.375rem]"
   },
   {
     url: "mailto:diogo.silva8@estudante.sesisenai.org.br?subject=Assunto&body=Olá!",
     icon: FaEnvelope,
-    className: "h-11 w-11 sm:h-[1.438rem] sm:w-[1.438rem] sm:-mt-1"
+    size: 16,
+    className: "sm:h-[1.125rem] sm:w-[1.125rem] md:h-[1.425rem] md:w-[1.425rem]"
   },
 ]
 
-export default function SocialsHero() {
+export default function SocialsHeader() {
   return (
-    <section className='
-      mt-20 flex justify-center gap-6 items-center
-      sm:flex-col sm:justify-center sm:items-center sm:gap-4 sm:mt-40
-      md:hidden
+    <section className='gap-3 items-center hidden
+      md:flex md:gap-4
+      lg:flex
+      xl:flex
+      2xl:flex
     '>
       {socials.map((social, index) => (
         <SocialLink social={social} key={index}/>
