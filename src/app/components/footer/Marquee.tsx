@@ -15,8 +15,8 @@ const Marquee = () => {
               <h3
                 key={`${j}-${i}`}
                 className='text-center px-2 font-medium mt-3 mb-1 text-[3.2rem] tracking-[-0.05rem]
-                  sm:text-7xl sm:mt-6 sm:mb-[1.125rem]
-                  md:text-[5rem] md:mt-7 md:mb-6
+                  md:text-7xl md:mt-6 md:mb-[1.125rem]
+                  lg:text-[5rem] lg:mt-7 lg:mb-6
                 '
               >
                 DIOGO SILVA

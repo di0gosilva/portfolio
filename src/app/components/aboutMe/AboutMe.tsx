@@ -15,6 +15,7 @@ export default function AboutMe() {
   return (
     <>
       <SectionTitle id="about" title="Sobre mim"/>
+
       <div ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -25,11 +26,11 @@ export default function AboutMe() {
         </motion.div>
 
         <div className="mx-5
-          sm:mx-10 sm:flex sm:justify-between sm:items-center
-          md:mx-[3.75rem]
+          md:mx-10 md:flex md:justify-between md:items-center
+          lg:mx-[3.75rem]
         ">
           <motion.div
-            className="sm:order-2"
+            className="md:order-2"
             initial={{ opacity: 0, y: -30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
@@ -38,7 +39,7 @@ export default function AboutMe() {
           </motion.div>
 
           <motion.div
-            className="sm:order-1"
+            className="md:order-1"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}

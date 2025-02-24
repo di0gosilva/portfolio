@@ -6,8 +6,9 @@ export default function TechnologiesSecondRow() {
   const secondRow = technologies.slice(8, 16);
   return (
     <>
-      <div className="mt-5 mb-10 overflow-hidden whitespace-nowrap relative w-full xs:gap-3.5
-      sm:mb-10
+      <div className="mt-5 mb-10 overflow-hidden whitespace-nowrap relative w-full
+        xs:gap-3.5
+        md:mb-10
       ">
         <motion.div
           className="flex min-w-max justify-start"
@@ -16,8 +17,8 @@ export default function TechnologiesSecondRow() {
         >
           {[...Array(2)].map((_, j) => (
             <div key={j} className="flex gap-4 items-center
-              sm:gap-7
-              md:gap-10
+              md:gap-7
+              lg:gap-10
             ">
               {[...Array(40)].map((_, i) =>
                 secondRow.map((item, index) => (

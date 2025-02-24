@@ -9,32 +9,32 @@ const socials = [
     url: "https://www.linkedin.com/in/diogo-silva-ba702495/",
     icon: FaLinkedin,
     size: 15,
-    className: "sm:h-[1.063rem] sm:w-[1.063rem] md:h-5 md:w-5"
+    className: "md:h-[1.063rem] md:w-[1.063rem] lg:h-5 lg:w-5"
   },
   {
     url: "https://github.com/di0gosilva",
     icon: FaGithub,
     size: 15,
-    className: "sm:h-[1.063rem] sm:w-[1.063rem] md:h-5 md:w-5"
+    className: "md:h-[1.063rem] md:w-[1.063rem] lg:h-5 lg:w-5"
   },
   {
     url: "https://instagram.com/di0gosilva",
     icon: FaInstagram,
     size: 15,
-    className: "sm:h-[1.125rem] sm:w-[1.125rem] md:h-[1.375rem] md:w-[1.375rem]"
+    className: "md:h-[1.125rem] md:w-[1.125rem] lg:h-[1.375rem] lg:w-[1.375rem]"
   },
   {
     url: "mailto:diogo.silva8@estudante.sesisenai.org.br?subject=Assunto&body=Olá!",
     icon: FaEnvelope,
     size: 16,
-    className: "sm:h-[1.125rem] sm:w-[1.125rem] md:h-[1.425rem] md:w-[1.425rem]"
+    className: "md:h-[1.125rem] md:w-[1.125rem] lg:h-[1.425rem] lg:w-[1.425rem]"
   },
 ]
 
 export default function SocialsFooter() {
   return (
     <section className='flex gap-3 items-center
-      md:gap-4
+      lg:gap-4
     '>
       {socials.map((social, index) => (
         <SocialLink social={social} key={index}/>

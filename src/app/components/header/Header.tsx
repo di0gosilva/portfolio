@@ -9,8 +9,8 @@ export default function Header() {
       <motion.header
         className="
           mx-5 mt-5 relative flex justify-between items-center
-          sm:mx-10 sm:mt-10
-          md:mx-[3.75rem]
+          md:mx-10 md:mt-10
+          lg:mx-[3.75rem]
           "
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

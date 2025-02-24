@@ -17,8 +17,8 @@ export default function SectionTitle({ title, id }: SectionTitle) {
       ref={ref}
       className="
         mx-5 mt-24 font-medium tracking-[-0.03rem] relative
-        sm:text-2xl sm:mx-10
-        md:text-[1.75rem] md:text-center
+        md:text-2xl md:mx-10
+        lg:text-[1.75rem] lg:text-center
       "
       initial={{ opacity: 0, y: -30 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
@@ -26,8 +26,8 @@ export default function SectionTitle({ title, id }: SectionTitle) {
     >
       <span className="
         border-b-2 w-5 border-white absolute -bottom-px
-        sm:w-8
-        md:-bottom-1 md:w-10
+        md:w-8
+        lg:-bottom-1 lg:w-10
       "></span>
       {title}
     </motion.h3>

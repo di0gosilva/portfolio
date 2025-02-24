@@ -34,8 +34,8 @@ export default function Logo() {
   return (
     <h1 className="
       font-medium tracking-[-0.03rem]
-      sm:text-2xl
-      md:text-[1.75rem] md:absolute md:left-1/2 md:transform md:-translate-x-1/2
+      md:text-2xl
+      lg:text-[1.75rem] lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2
     ">
       {letters}
     </h1>

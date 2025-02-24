@@ -6,7 +6,7 @@ export default function TechnologiesFirstRow() {
   const firstRow = technologies.slice(0, 8);
   return (
     <div className="mt-8 overflow-hidden whitespace-nowrap relative w-full xs:gap-3.5
-      sm:mt-[4.5rem]
+      md:mt-[4.5rem]
     ">
       <motion.div
         className="flex min-w-max justify-start"
@@ -15,8 +15,8 @@ export default function TechnologiesFirstRow() {
       >
         {[...Array(2)].map((_, j) => (
           <div key={j} className="flex gap-4 items-center
-            sm:gap-7
-            md:gap-10
+            md:gap-7
+            lg:gap-10
           ">
             {[...Array(40)].map((_, i) =>
               firstRow.map((item, index) => (
