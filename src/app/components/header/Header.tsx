@@ -8,7 +8,7 @@ export default function Header() {
   return (
       <motion.header
         className="
-          mx-5 mt-5 flex justify-between items-center
+          mx-5 mt-5 relative flex justify-between items-center
           sm:mx-10 sm:mt-10
           md:mx-[3.75rem]
           "

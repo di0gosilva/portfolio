@@ -60,7 +60,7 @@ export default function BoxProject() {
                   transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}>
                   <p className='mt-3 tracking-[-0.03rem] leading-[0.44rem] opacity-65 uppercase
                     sm:-mt-3 sm:text-lg
-                    md:text-2xl
+                    md:text-xl
                   '>{ project.projectType }</p>
                 </motion.div>
 
