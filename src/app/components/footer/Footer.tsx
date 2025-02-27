@@ -9,6 +9,7 @@ export default function Footer() {
       <div className='mx-5 flex justify-between items-center
         md:mx-10
         lg:mx-[3.75rem]
+        xl:mx-20
       '>
         <Copyright />
         <SocialsFooter />

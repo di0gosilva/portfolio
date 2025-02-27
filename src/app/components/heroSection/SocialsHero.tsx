@@ -33,6 +33,8 @@ export default function SocialsHero() {
       mt-20 flex justify-center gap-6 items-center
       md:flex-col md:justify-center md:items-center md:gap-4 md:mt-40
       lg:hidden
+      xl:hidden
+      2xl:hidden
     '>
       {socials.map((social, index) => (
         <SocialLink social={social} key={index}/>

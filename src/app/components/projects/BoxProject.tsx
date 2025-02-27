@@ -15,12 +15,14 @@ export default function BoxProject() {
     <section className='mt-10
       md:mt-12
       lg:mt-16
+      xl:mt-[6.25rem]
     '>
       {
         projects.map((project) => (
           <div ref={ref} key={project.id} className="mx-5 mb-10
             md:mx-10 md:mb-12
             lg:mx-[3.75rem] lg:mt-16
+            xl:mx-20 xl:mt-[6.25rem]
           ">
             <a
               href={project.href}
@@ -49,6 +51,7 @@ export default function BoxProject() {
                   className='mt-8 flex items-center justify-between
                     md:mt-0
                     lg:flex-col lg:items-start lg:gap-10
+                    xl:gap-24
                   '>
                   <ProjectTitle title={project.title} />
                   <ProjectTechs techs={project.techImages} />
@@ -61,6 +64,7 @@ export default function BoxProject() {
                   <p className='mt-3 tracking-[-0.03rem] leading-[0.44rem] opacity-65 uppercase
                     md:-mt-10 md:text-lg
                     lg:text-xl
+                    xl:text-2xl
                   '>{ project.projectType }</p>
                 </motion.div>
 

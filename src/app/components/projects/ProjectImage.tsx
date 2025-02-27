@@ -26,6 +26,7 @@ export default function ProjectImage({ images }: ImageProjectProps) {
       className="relative w-[350px] h-[180px] overflow-hidden
         md:w-[334px] md:h-[215px]
         lg:w-[441px] lg:h-[270px]
+        xl:w-[630px] xl:h-[450px]
       "
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -43,7 +44,7 @@ export default function ProjectImage({ images }: ImageProjectProps) {
               alt={`Imagem ${i + 1} do projeto`}
               width={800}
               height={450}
-              sizes="(max-width: 640px) 350px, (max-width: 768px) 441px"
+              sizes="(max-width: 640px) 334px, (max-width: 768px) 441px, (max-width: 1440) 630px"
             />
         ))}
       </motion.div>

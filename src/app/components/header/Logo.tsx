@@ -36,6 +36,7 @@ export default function Logo() {
       font-medium tracking-[-0.03rem]
       md:text-2xl
       lg:text-[1.75rem] lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2
+      xl:text-[2rem]
     ">
       {letters}
     </h1>

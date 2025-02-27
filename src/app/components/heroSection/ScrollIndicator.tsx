@@ -17,6 +17,7 @@ const ScrollIndicator = () => {
         className="animate-pulse
           md:h-16 md:w-12 md:-mt-2.5
           lg:h-20 lg:w-[3.625rem]
+          xl:h-24 xl:w-[4.25rem]
         "/>
     </motion.div>
   );

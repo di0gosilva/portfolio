@@ -17,6 +17,7 @@ const Marquee = () => {
                 className='text-center px-2 font-medium mt-3 mb-1 text-[3.2rem] tracking-[-0.05rem]
                   md:text-7xl md:mt-6 md:mb-[1.125rem]
                   lg:text-[5rem] lg:mt-7 lg:mb-6
+                  xl:text-8xl xl:mt-8 xl:mb-7
                 '
               >
                 DIOGO SILVA

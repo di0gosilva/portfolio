@@ -4,6 +4,7 @@ export default function EmailContact() {
       <h2 className='text-[3.2rem] uppercase tracking-[-0.05rem] mb-[-0.5rem]
         md:text-[4rem]
         lg:text-[5rem]
+        xl:text-[6.5rem] xl:-mb-6
       '>Enviar Email</h2>
     </a>
   )

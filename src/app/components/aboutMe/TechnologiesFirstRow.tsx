@@ -7,6 +7,7 @@ export default function TechnologiesFirstRow() {
   return (
     <div className="mt-8 overflow-hidden whitespace-nowrap relative w-full xs:gap-3.5
       md:mt-[4.5rem]
+      xl:mt-24
     ">
       <motion.div
         className="flex min-w-max justify-start"

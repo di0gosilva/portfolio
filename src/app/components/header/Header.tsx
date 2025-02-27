@@ -11,6 +11,7 @@ export default function Header() {
           mx-5 mt-5 relative flex justify-between items-center
           md:mx-10 md:mt-10
           lg:mx-[3.75rem]
+          xl:mx-20 xl:mt-12
           "
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

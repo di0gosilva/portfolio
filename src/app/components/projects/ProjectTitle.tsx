@@ -7,6 +7,7 @@ export default function ProjectTitle({ title }: ProjectTitleProps) {
     <h2 className='font-medium text-2xl tracking-[-0.03rem] leading-[0.41rem]
       md:text-2xl md:-mt-2
       lg:text-[1.75rem] lg:-mt-1
+      xl:text-[2.5rem]
     '>
       {title}
     </h2>

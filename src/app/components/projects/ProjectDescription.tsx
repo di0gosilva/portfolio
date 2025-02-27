@@ -8,6 +8,7 @@ export default function ProjectDescription({ description }: ProjectDescriptionPr
       <p className='mt-8 text-xs tracking-[0.01rem] leading-[1.1rem]
         md:text-sm md:leading-[0.95rem] md:tracking-[0.02rem]
         lg:w-[25.875rem] lg:text-base lg:leading-[1.2rem] lg:tracking-[-0.03rem] lg:-mt-12
+        xl:w-[37.625rem] xl:text-2xl xl:tracking-[-0.03em]
       '>{ description }</p>
     </div>
   )

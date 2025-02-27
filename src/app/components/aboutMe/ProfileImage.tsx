@@ -12,6 +12,7 @@ export default function ProfileImage() {
         height={155}
         className="md:h-52 md:w-52
           lg:h-[17.25rem] lg:w-[17.25rem]
+          xl:h-[19.063rem] xl:w-[19.063rem]
         "
         />
     </section>
