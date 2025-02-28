@@ -8,7 +8,10 @@ export default function TechnologiesSecondRow() {
     <>
       <div className="mt-5 mb-10 overflow-hidden whitespace-nowrap relative w-full
         xs:gap-3.5
+        sm:mt-4
         md:mb-10
+        xlwin:mt-8
+        2xl:mt-7
       ">
         <motion.div
           className="flex min-w-max justify-start"

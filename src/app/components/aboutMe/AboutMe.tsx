@@ -26,9 +26,11 @@ export default function AboutMe() {
         </motion.div>
 
         <div className="mx-5
+          sm:mx-10
           md:mx-10 md:flex md:justify-between md:items-center
           lg:mx-[3.75rem]
           xl:mx-20
+          2xl:mx-[6.25rem]
         ">
           <motion.div
             className="md:order-2"

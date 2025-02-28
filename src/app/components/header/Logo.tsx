@@ -33,10 +33,13 @@ export default function Logo() {
 
   return (
     <h1 className="
-      font-medium tracking-[-0.03rem]
+      font-medium tracking-[-0.03em]
+      sm:text-xl
       md:text-2xl
       lg:text-[1.75rem] lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2
       xl:text-[2rem]
+      xlwin:text-3xl
+      2xl:text-4xl
     ">
       {letters}
     </h1>

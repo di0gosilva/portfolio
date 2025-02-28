@@ -11,9 +11,12 @@ export default function ContactLinks() {
 
   return (
     <section ref={ref} className='mx-5 my-36
+      xxxs:mt-32 xxxs:mb-36
+      sm:mx-10
       md:mx-10 md:mt-12 md:mb-16
       lg:mx-[3.75rem] lg:mt-11 lg:mb-[4.75rem]
       xl:mx-20
+      2xl:mx-[6.25rem]
     '>
       <motion.div
         initial={{ opacity: 0, y: -20 }}

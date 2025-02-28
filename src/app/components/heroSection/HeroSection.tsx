@@ -12,9 +12,10 @@ export default function HeroSection() {
 
   return (
     <div ref={ref}>
-      <div className="md:mx-10 md:flex md:flex-row    md:justify-between
+      <div className="md:mx-10 md:flex md:flex-row md:justify-between
         lg:mx-[3.75rem]
         xl:mx-20
+        2xl:mx-[6.25rem]
       ">
         <motion.div
           className="md:order-last"
@@ -37,6 +38,7 @@ export default function HeroSection() {
       <div className="md:mx-10 md:flex md:justify-between md:mb-10
         lg:mx-[3.75rem]
         xl:mx-20
+        2xl:mx-[6.25rem]
       ">
         <motion.div
           initial={{ opacity: 0, y: -40 }}
@@ -48,9 +50,12 @@ export default function HeroSection() {
 
         <section className="
           mt-16 flex justify-center items-center mb-3
+          sm:mt-20
           md:mt-40
-          lg:mt-[11.188rem]
+          lg:mt-[11.7rem]
           xl:mt-[13.375rem]
+          xlwin:mt-[7.75rem]
+          2xl:mt-[11.25rem]
         ">
           <motion.section
             initial={{ opacity: 0, y: 10 }}

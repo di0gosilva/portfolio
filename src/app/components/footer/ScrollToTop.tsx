@@ -9,7 +9,7 @@ const ScrollToTop = () => {
   // Mostrar o botão quando o usuário rolar para baixo
   useEffect(() => {
     const toggleVisibility = () => {
-      setIsVisible(window.scrollY > 300);
+      setIsVisible(window.scrollY > 500);
     };
 
     window.addEventListener("scroll", toggleVisibility);
@@ -25,9 +25,13 @@ const ScrollToTop = () => {
     <button
       onClick={scrollToTop}
       className={`fixed bottom-5 right-4 ounded-full transition-opacity z-10 duration-300
+        xxxs:bottom-[1.3rem]
+        xs:bottom-[1.313rem]
+        sm:right-[2.2rem] sm:bottom-[1.188rem]
         md:right-[2.375rem] md:bottom-6
         lg:right-[3.75rem] lg:bottom-[1.875rem]
-        xl:right-20
+        xlwin:right-[4.7rem] xlwin:bottom-[1.8rem]
+        xl:right-20 xl:bottom-[1.8rem]
         ${ isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
@@ -36,9 +40,12 @@ const ScrollToTop = () => {
         alt="Ícone Seta para Cima"
         width={34}
         height={35}
-        className="md:h-12 md:w-12
+        className="
+          sm:h-11 sm:w-11
+          md:h-12 md:w-12
           lg:h-14 lg:w-14
           xl:h-20 xl:w-16
+          xlwin:h-16 xlwin:w-16
         "
       />
     </button>

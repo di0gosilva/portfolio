@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 export default function TechnologiesFirstRow() {
   const firstRow = technologies.slice(0, 8);
   return (
-    <div className="mt-8 overflow-hidden whitespace-nowrap relative w-full xs:gap-3.5
+    <div className="mt-8 overflow-hidden whitespace-nowrap relative w-full
+      xs:gap-3.5
       md:mt-[4.5rem]
       xl:mt-24
+      xlwin:mt-16
     ">
       <motion.div
         className="flex min-w-max justify-start"

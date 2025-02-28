@@ -14,7 +14,11 @@ export default {
         green: "#0CA45A",
       },
       screens: {
-        'xs': {'max': '389px'},
+        'xxxs': {'max': '330px'},
+        'xxs': {'min': '331px', 'max': '365px'},
+        'xs': {'min': '366px','max': '388px'},
+        'sm': {'min': '590px', 'max': '767px'},
+        'xlwin': {'min': '1365px', 'max': '1439px'},
       },
     },
   },
