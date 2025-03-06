@@ -4,7 +4,7 @@ import ContactLinks from "./ContactLinks";
 export default function Contact() {
   return (
     <>
-      <SectionTitle title="Contato" />
+      <SectionTitle id="contact" title="Contato" />
       <ContactLinks />
     </>
   )

@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
-import SocialsHeader from "./SocialsHeader";
+import { SocialsHeader } from "../../Socials";
 
 export default function Header() {
   return (

@@ -1,8 +1,7 @@
-import {FaLinkedin} from 'react-icons/fa'
-import {FaGithub} from 'react-icons/fa'
-import {FaInstagram} from 'react-icons/fa'
-import {FaEnvelope} from 'react-icons/fa'
-import SocialLink from '../../SocialLink'
+"use client"
+import { motion } from 'framer-motion'
+import {FaLinkedin, FaGithub, FaInstagram, FaEnvelope} from 'react-icons/fa'
+import SocialLink from './SocialLink'
 
 const socials = [
   {
@@ -31,16 +30,25 @@ const socials = [
   },
 ]
 
-export default function SocialsFooter() {
+const Socials = ({ className = '' }) => {
+  const green = "#0CA45A"
+  const duration = 0.4
+
   return (
-    <section className='flex gap-3 items-center
-      lg:flex lg:gap-4
-      xl:flex xl:gap-[1.125rem]
-      2xl:flex 2xl:gap-5
-    '>
-      {socials.map((social, index) => (
-        <SocialLink social={social} key={index}/>
+    <section className={`gap-3 items-center ${className}`}>
+      {socials.map((social) => (
+        <motion.div
+          whileHover={{ color: green}}
+          transition={{ duration: duration }}
+          key={social.url}>
+            <SocialLink social={social} />
+        </motion.div>
       ))}
     </section>
   )
 }
+
+export const SocialsHeader = () => <Socials className='hidden lg:flex lg:gap-4 xl:gap-[1.125rem] 2xl:gap-5' />
+export const SocialsFooter = () => <Socials className='flex gap-3 lg:gap-4 xl:gap-[1.125rem] 2xl:gap-5' />
+
+export default Socials

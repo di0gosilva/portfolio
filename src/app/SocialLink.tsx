@@ -11,9 +11,11 @@ type SocialProps = {
 }
 
 export default function SocialLink({ social }: SocialProps) {
+  const Icon = social.icon
+
   return (
     <a href={social.url} target='_blank' rel="noopener noreferrer">
-      <social.icon className={social.className} />
+      <Icon className={social.className} />
     </a>
   )
 }

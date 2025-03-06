@@ -1,7 +1,7 @@
 import Marquee from "./Marquee";
 import ScrollToTop from "./ScrollToTop";
 import Copyright from "./Copyright";
-import SocialsFooter from "./SocialsFooter";
+import { SocialsFooter } from "@/app/Socials";
 
 export default function Footer() {
   return (

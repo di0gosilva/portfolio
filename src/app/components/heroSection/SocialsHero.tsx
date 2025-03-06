@@ -1,3 +1,5 @@
+"use client"
+import { motion } from 'framer-motion'
 import {FaLinkedin} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
 import {FaInstagram} from 'react-icons/fa'
@@ -28,6 +30,9 @@ const socials = [
 ]
 
 export default function SocialsHero() {
+  const green = "#0CA45A"
+  const duration = 0.4
+
   return (
     <section className='
       mt-20 flex justify-center gap-6 items-center
@@ -37,8 +42,13 @@ export default function SocialsHero() {
       xl:hidden
       2xl:hidden
     '>
-      {socials.map((social, index) => (
-        <SocialLink social={social} key={index}/>
+      {socials.map((social) => (
+        <motion.div
+          whileHover={{ color: green}}
+          transition={{ duration: duration }}
+          key={social.url}>
+            <SocialLink social={social} />
+        </motion.div>
       ))}
     </section>
   )

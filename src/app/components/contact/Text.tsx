@@ -5,7 +5,7 @@ export default function Text() {
       sm:text-xl
       md:text-2xl md:mt-8
       lg:text-[1.75rem] lg:mt-12
-      xl:text-[2rem]
+      xl:text-[2rem] xl:ml-1
       xlwin:text-[1.75rem] xlwin:ml-0.5
     '>ou entre em contato no:</p>
   )
