@@ -6,8 +6,6 @@ Este é o meu portfólio pessoal desenvolvido com **Next.js**, **React**, **Type
 
 Criar uma interface simples e objetiva onde visitantes possam conhecer meus trabalhos, entrar em contato comigo e acessar minhas redes profissionais.
 
-## Demonstração 📸
-
 ## Tecnologias Utilizadas ⚙️
 
 - [Next.js](https://nextjs.org/)
