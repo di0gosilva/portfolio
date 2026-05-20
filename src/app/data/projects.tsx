@@ -5,6 +5,10 @@ export const projects = [
     images: [
       "../../images/img-biblotek/biblotek_capa.svg",
       "../../images/img-biblotek/biblotek_mobile.svg",
+      "../../images/img-biblotek/readings1_desktop.svg",
+      "../../images/img-biblotek/readings2_desktop.svg",
+      "../../images/img-biblotek/bookpage_desktop.svg",
+      "../../images/img-biblotek/stats_desktop.svg",
       ],
       title: "Biblotek",
       techImages: [
