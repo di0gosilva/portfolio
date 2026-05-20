@@ -76,8 +76,8 @@ export const projects = [
         height: 25,
       },
     ],
-    projectType: "Aplicativo Android/Ios",
-    description: "Um SIG - Sistema de Gerenciamento Inteligente que apresente um dashboard com dados de estoque, produção e manutenção para uma fábrica de veículos.",
+    projectType: "Aplicativo Android/iOS",
+    description: "Sistema de gerenciamento para fábrica de veículos, com dashboard para acompanhamento de estoque, produção e manutenção em uma interface centralizada.",
   },
   {
     id: 3,
@@ -109,7 +109,7 @@ export const projects = [
         height: 25,
       },
     ],
-    projectType: "Website",
-    description: "Um website que apresente um dashboard com entrada e saída de dados, um balanço total de gastos mensais com gráficos para controle financeiro.",
+    projectType: "Website - Dashboard Financeiro",
+    description: "Dashboard responsivo para controle financeiro, com visualização de entradas, saídas, saldo mensal e gráficos para acompanhar gastos de forma simples e organizada.",
   },
 ]
