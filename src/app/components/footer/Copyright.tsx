@@ -8,6 +8,6 @@ export default function Copyright() {
       lg:text-xl
       xl:text-[1.625rem]
       xlwin:text-xl
-    '>Copyright &copy; Diogo Silva 2025</p>
+    '>Copyright &copy; Diogo Silva 2026</p>
   )
 }
