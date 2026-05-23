@@ -1,6 +1,5 @@
 "use client"
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 import { projects } from "../../data/projects";
 import ProjectImage from "./ProjectImage";
 import ProjectTitle from "./ProjectTitle";
@@ -8,9 +7,6 @@ import ProjectTechs from "./ProjectTechs";
 import ProjectDescription from "./ProjectDescription";
 
 export default function BoxProject() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true ,margin: "-100px" });
-
   return (
     <section className='mt-10
       sm:mt-12
@@ -85,7 +81,6 @@ export default function BoxProject() {
         //   </a>
         // </div>
         <motion.div
-          ref={ref}
           key={project.id}
           className="mx-5 mb-10 relative overflow-hidden
             sm:mx-10 sm:mt-12
@@ -160,7 +155,8 @@ export default function BoxProject() {
             >
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                 className="md:w-1/2 md:mr-8 lg:mr-12 2xl:mr-16"
               >
@@ -171,7 +167,8 @@ export default function BoxProject() {
                 {/* Restante do conteúdo permanece igual */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
                   className="mt-8 flex items-center justify-between
                     md:mt-0
@@ -185,7 +182,8 @@ export default function BoxProject() {
 
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
                 >
                   <p className="mt-3 tracking-[-0.03rem] leading-[0.44rem] opacity-65 uppercase
@@ -199,7 +197,8 @@ export default function BoxProject() {
 
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
                 >
                   <ProjectDescription description={project.description} />
